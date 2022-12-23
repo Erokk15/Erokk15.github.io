@@ -102,8 +102,10 @@ function agregarPais() {
         moneda: moneda
     }
 
-    paises.unshift(pais);
-    mostrarPaises()
+    if((pais.nombre != "" && pais.nombre != null) && (pais.capital != null && pais.capital !="") && (pais.bandera != null && pais.bandera !="") && (pais.idioma_oficial != null && pais.idioma_oficial !="") && (pais.moneda != null && pais.moneda !="")){
+        paises.unshift(pais);
+        mostrarPaises()
+    }
     }
 
 
