@@ -103,6 +103,7 @@ function agregarPais() {
     }
 
     paises.unshift(pais);
+    mostrarPaises()
     }
 
 
