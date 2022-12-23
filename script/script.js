@@ -55,10 +55,10 @@ function mostrarPaises() {
 
     for (pais of paises) {
     stringTabla +=
-    `<div class="col-12 col-lg-12">
-        <table class="table table-sm table-striped bg-gradient-warning">
+    `<div class="col-12 col-lg-12 bg-dark">
+        <table class="table table-sm table-info bg-gradient-warning ">
             <tbody>
-                <tr>
+                <tr class = "table-dark">
                     <th>Nombre</th>
                     <th>Capital</th>
                     <th>Idioma</th>
