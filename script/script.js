@@ -41,6 +41,11 @@ agregarMonitores();
 
 //funcion para agregar listeners a los botones
 function agregarMonitores() {
+    const mostrar = document.getElementById("mostrarPaises");
+    const agregar = document.getElementById("agregarPais");
+
+    mostrar.addEventListener("click", mostrarPaises);
+    agregar.addEventListener("click", agregarPais);
 }
 
 
@@ -77,6 +82,7 @@ function mostrarPaises() {
     </div>`;
 
     document.getElementById("paises").innerHTML = stringTabla;
+
     }
 }
 
@@ -88,6 +94,15 @@ function agregarPais() {
     let moneda = prompt("Ingrese la moneda del pais");
     let bandera = prompt("Ingrese la bandera del pais");
 
+    let pais = {
+        nombre: nombre,
+        bandera: bandera,
+        capital: capital,
+        idioma_oficial: idioma,
+        moneda: moneda
+    }
 
-}
+    paises.unshift(pais);
+    }
+
 
